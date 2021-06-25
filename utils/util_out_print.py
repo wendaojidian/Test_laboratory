@@ -1,0 +1,11 @@
+def out_print_request(request):
+    print("request信息：--------------------------")
+    print("页面完整路径：", request.path)
+    print("HTTP方法：", request.method)
+    print("提交数据的编码方式：", request.encoding)
+    print("GET请求参数：", request.GET)
+    print("POST请求参数：", request.POST)
+    print("上传文件：", request.FILES)
+    print("cookie: ", request.COOKIES)
+    print("session: ", request.session)
+    print("--------------------------------------")
