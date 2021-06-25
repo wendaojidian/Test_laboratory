@@ -8,4 +8,6 @@ def out_print_request(request):
     print("上传文件：", request.FILES)
     print("cookie: ", request.COOKIES)
     print("session: ", request.session)
+    print("参数：", request.params)
+    # print("参数查询：", request.query_params)
     print("--------------------------------------")
